@@ -10,7 +10,8 @@ Tag.init(
     id:{
       type: DataTypes.INTEGER,
       allowNull:false,
-      defaultValue: 10,
+      autoIncrement: true,
+      primaryKey: true,
       validate:{
         isNumeric: true
       }
